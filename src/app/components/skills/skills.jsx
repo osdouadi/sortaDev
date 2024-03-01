@@ -24,8 +24,8 @@ export default function Skills() {
   return (
     <section>
       <div
-        className="w-full h-[3rem] py-8 flex items-center lg:h-[7rem] my-5 lg:my-10"
-        style={{ background: 'var(--color-brand-secondary)' }}
+        className="w-full h-[4.5rem] py-10 flex items-center lg:h-[7rem] my-5 lg:my-10"
+        style={{ background: 'var(--color-brand-orange)' }}
       >
         <div className="section-title-container-with-bg w-full overflow-hidden flex justify-center mx-auto relative ">
           <div className="section-title-layer">
@@ -51,15 +51,15 @@ export default function Skills() {
                 whileInView="animate"
                 custom={index}
               >
-                <div className="w-[54px] h-[54px]  lg:w-[65px] lg:h-[65px] rounded-full relative overflow-hidden  flex justify-center items-center">
+                <div className="w-[60px] h-[60px]  lg:w-[70px] lg:h-[70px] rounded-full relative overflow-hidden  flex justify-center text-center items-center mb-1 lg:mb-2">
                   <img
                     src={skill.image}
                     alt="skill"
-                    className=" w-full h-full absolute rounded-full  object-contain p-1"
+                    className=" w-full h-full absolute rounded-full  object-contain p-1 "
                   />
                 </div>
 
-                <span className="skill-name text-base ">{skill.name}</span>
+                <span className="skill-name text-xl ">{skill.name}</span>
               </motion.div>
             ))}
           </div>
@@ -68,7 +68,7 @@ export default function Skills() {
           <div className="lang w-full lg:w-1/2">
             <h3>Languages</h3>
             <div className="w-[80%] relative  mx-auto sm:mx-0">
-              <div className="flex flex-col  gap-1 ">
+              <div className="flex flex-col  gap-1 mb-3 ">
                 <div className="flex flex-row items-center  gap-2 ">
                   <img
                     src="/images/algeria.svg"
@@ -90,7 +90,7 @@ export default function Skills() {
                 </div>
               </div>
 
-              <div className="flex flex-col  gap-1 ">
+              <div className="flex flex-col  gap-1 mb-3">
                 <div className="flex flex-row items-center  gap-2 ">
                   <img
                     src="/images/english.svg"
@@ -111,7 +111,7 @@ export default function Skills() {
                   ></motion.div>
                 </div>
               </div>
-              <div className="flex flex-col gap-1 ">
+              <div className="flex flex-col gap-1 mb-3">
                 <div className="flex flex-row items-center  gap-2  ">
                   <img
                     src="/images/spanish.svg"
@@ -132,7 +132,7 @@ export default function Skills() {
                   ></motion.div>
                 </div>
               </div>
-              <div className="flex flex-col  gap-1 ">
+              <div className="flex flex-col  gap-1 mb-3 ">
                 <div className="flex flex-row items-center  gap-2 ">
                   <img
                     src="/images/french.svg"

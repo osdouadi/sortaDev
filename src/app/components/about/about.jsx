@@ -13,9 +13,9 @@ export default function About() {
     <section>
       <div className="section-title-container w-full overflow-hidden flex justify-center mx-auto relative ">
         <div className="section-title-layer">
-          <PlusLeft color="#5fa8a0" />
+          <PlusLeft color="var(--color-brand-orange)" />
           <span className="opacity-60 uppercase">About me</span>
-          <PlusRight color="#5fa8a0" />
+          <PlusRight color="var(--color-brand-orange)" />
           <p className=" font-thin">About me</p>
         </div>
 
@@ -24,28 +24,26 @@ export default function About() {
       <div className="flex flex-col px-6 py-5 lg:flex-row lg:justify-center lg:items-center ">
         <div className="about-text lg:w-[49%]">
           <motion.p
-            initial={{ opacity: 0.4, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0.4, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
             A Full Stack Developer, proficient in crafting high-performance
-            application. Specializing in React, Next.js TypeScript, Node.js,
-            Express.js, MongoDB, Tailwind and many other development
-            technologies.
+            applications. I am adept at creating web applications with
+            intuitive, user-centric interfaces.
             <br />
-            I am adept at creating web applications with intuitive, user-centric
-            interfaces. I am committed to upholding industry best practices,
-            including writing clean and maintainable code, to insure scalability
-            and efficiency.
+            I am committed to upholding industry best practices, including
+            writing clean and maintainable code, to insure scalability and
+            efficiency.
             <br />
-            Determind top deliver top-tier solutions and I thrive on embracing
+            Determined to deliver top-tier solutions and I thrive on embracing
             the latest technologies to create immersive user experiences.
           </motion.p>
         </div>
         <motion.div
           className="about-svg"
-          initial={{ opacity: 0.4, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0.4, y: 100 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
           <AboutSvg />

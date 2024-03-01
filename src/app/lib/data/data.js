@@ -1,40 +1,34 @@
 
-import { FiFacebook, FiInstagram, FiLinkedin, FiGithub } from 'react-icons/fi';
-import { LiaTelegramPlane } from 'react-icons/lia';
 import { TbBrandGithubFilled } from 'react-icons/tb';
 import { FaLinkedinIn } from 'react-icons/fa6';
-import { FaFacebookF } from 'react-icons/fa';
-import { RiInstagramFill } from 'react-icons/ri';
-import { FaTelegramPlane } from 'react-icons/fa';
+import { SlEnvolopeLetter } from 'react-icons/sl';
+import { IoLogoWhatsapp } from 'react-icons/io';
+import { MdEmail } from 'react-icons/md';
 
 const navItems = [
-  { title: 'About me', link: '#' },
-  { title: 'Experience', link: '#' },
-  { title: 'Skills', link: '#' },
-  { title: 'Projects', link: '#' },
-  { title: 'Contact', link: '#' },
+  { title: 'About me', link: '#about' },
+  { title: 'Skills', link: '#skills' },
+  { title: 'Experience', link: '#experience' },
+  { title: 'Contact', link: '#contact' },
 ];
 
 const socialMedia = [
   {
-    link: '#',
+    link: 'https://github.com/osdouadi',
     icon: <TbBrandGithubFilled />,
   },
   {
-    link: '#',
+    link: 'https://www.linkedin.com/in/oussama-douadi-b9790b29b/',
     icon: <FaLinkedinIn />,
   },
+
   {
-    link: '#',
-    icon: <FaFacebookF />,
+    link: 'https://wa.me/+213557958797',
+    icon: <IoLogoWhatsapp />,
   },
   {
-    link: '#',
-    icon: <RiInstagramFill />,
-  },
-  {
-    link: '#',
-    icon: <FaTelegramPlane />,
+    link: 'mailto:osdouadi@gmail.com',
+    icon: <MdEmail />,
   },
 ];
 

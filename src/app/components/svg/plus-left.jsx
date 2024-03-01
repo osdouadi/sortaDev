@@ -8,7 +8,7 @@ export default function PlusLeft({color}) {
         height="56"
         fill="none"
         viewBox="0 0 1149 56"
-        className="absolute -left-5  top-1/2 -translate-y-1/2 w-[20rem] lg:w-[35rem] lg:-left-10"
+        className="absolute -left-8  top-1/2 -translate-y-1/2 w-[30rem] lg:w-[35rem] lg:-left-10"
       >
         <rect width="6" height="24" x="9" y="16" fill={color} rx="3"></rect>
         <rect

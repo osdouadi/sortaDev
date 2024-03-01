@@ -12,11 +12,11 @@ export default function Hero() {
       <div className="hero container relative px-6 lg:px-14 mx-auto ">
         <div className="flex lg:flex-row items-center  -mt-[2rem] lg:mt-0 flex-col-reverse lg:h-[100vh] ">
           <motion.div
-            className="intro-text  flex flex-col  text-center lg:text-left lg:w-full "
+            className="intro-text  flex flex-col text-center lg:text-left lg:w-full "
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <h3 className="header pb-1">Full Stack Developer</h3>
+            <h3 className="header pb-2">Full Stack Developer</h3>
             <h2 className="font-semibold pb-1">Oussama Douadi</h2>
             <p>
               A software engineer adept in crafting high-performance systems &
@@ -24,7 +24,10 @@ export default function Hero() {
               insure scalability and efficiency.{' '}
             </p>
             <div className="action-buttons flex items-center gap-4 pt-5 flex-col lg:flex-row lg:w-full">
-              <button> Download CV</button>
+              <a href="/cv.pdf" download className="action-btn-cv">
+                {' '}
+                Download CV
+              </a>
               <button className="uppercase"> Get in touch</button>
             </div>
           </motion.div>

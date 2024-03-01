@@ -8,7 +8,7 @@ function PlusRight({color}) {
       height="56"
       fill="none"
       viewBox="0 0 1149 56"
-      className="absolute -right-5 top-1/2 -translate-y-1/2  w-[20rem] lg:w-[35rem] lg:-right-10"
+      className="absolute -right-8 top-1/2 -translate-y-1/2  w-[30rem] lg:w-[35rem] lg:-right-10"
     >
       <rect
         width="6"
