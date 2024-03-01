@@ -1,33 +1,484 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-brand-primary: #22252c;
+  --color-brand-secondary: #5fa8a0;
+  --color-brand-secondary-hover: #90bcb6;
+  --color-brand-third: #49505a;
+  --color-brand-text: #9fa6af;
+  --color-brand-text-second: #ced3dc;
+  /* --color-brand-secondary: #c6ff00; */
+  --color-white: #fafafa;
+  --fs-lg: 1.8rem;
+  --fs-text: 1.55rem;
+  --fs-text-xl: 1.3rem;
+  --fs-btn: 1.021rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@media screen and (max-width: 768px) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --fs-lg: 1.25rem;
+    --fs-text: 1.13rem;
+    --fs-text-xl: 1.1rem;
+    --fs-btn: 0.93rem;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--color-brand-primary);
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* Header Section   */
+.header .navbar .list-item {
+  color: var(--color-brand-secondary);
+  font-size: 1.30888rem;
+  transition: 0.3s;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 3px;
+}
+.header .navbar .list-item::after {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 0.15rem;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-brand-secondary-hover);
+  transition: 0.3s;
+}
+.header .navbar .list-item:hover {
+  color: var(--color-brand-secondary-hover);
+}
+
+.header .navbar .list-item:hover::after {
+  width: 100%;
+}
+.header .navbar .list-icon {
+  color: var(--color-brand-primary);
+  background-color: var(--color-brand-secondary);
+  padding: 0.4rem;
+  border-radius: 50px;
+  font-size: 1.75rem;
+  transition: 0.3s;
+}
+.header .navbar .list-icon:hover {
+  color: var(--color-brand-primary);
+  background-color: var(--color-brand-secondary-hover);
+}
+
+.section-title-container .section-title-layer,
+.section-title-container-with-bg .section-title-layer {
+  color: var(--color-brand-secondary);
+  text-shadow: 0 0 0.11rem var(--color-brand-secondary);
+  font-size: 5.3rem;
+  color: var(--color-brand-primary);
+  font-weight: 600;
+  position: relative;
+  font-family: system-ui;
+}
+.section-title-container-with-bg .section-title-layer {
+  color: var(--color-brand-secondary);
+  text-shadow: 0 0 0.15rem var(--color-brand-primary);
+}
+.section-title-container .section-title-layer p,
+.section-title-container-with-bg .section-title-layer p {
+  color: var(--color-brand-secondary);
+  font-weight: 400 !important;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  right: 35%;
+  transform: translateX(40%);
+  transform: translateY(-50%);
+  opacity: 0.96;
+}
+.section-title-container-with-bg .section-title-layer p {
+  color: var(--color-brand-primary);
+}
+.section-title {
+  color: var(--color-brand-secondary);
+}
+
+/* Hero Section   */
+.developer-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.hero .intro-text .header {
+  color: var(--color-white);
+  font-size: var(--fs-lg);
+  font-weight: 500;
+}
+
+.hero .intro-text h2 {
+  color: var(--color-brand-secondary);
+  font-size: 2.2rem;
+}
+
+.hero .intro-text p {
+  color: var(--color-brand-text-second);
+  font-size: var(--fs-text);
+}
+
+.hero .action-buttons button,
+.visit-project-link,
+.download-mycv {
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  font-size: var(--fs-btn);
+  width: 9.5rem;
+  font-weight: 600;
+}
+
+.hero .action-buttons button:first-child {
+  border: 0.06rem solid var(--color-brand-secondary);
+  color: var(--color-brand-secondary);
+  transition: 0.3s;
+}
+.hero .action-buttons button:first-child:hover {
+  background-color: var(--color-brand-secondary-hover);
+  border: 0.06rem solid var(--color-brand-secondary-hover);
+  color: var(--color-brand-primary);
+}
+.hero .action-buttons button:last-child,
+.visit-project-link {
+  background-color: var(--color-brand-secondary);
+  color: var(--color-brand-primary);
+  transition: 0.3s;
+}
+.hero .action-buttons button:last-child:hover,
+.visit-project-link:hover {
+  background-color: var(--color-brand-secondary-hover);
+  color: var(--color-brand-primary);
+}
+.download-mycv {
+  background-color: var(--color-brand-primary);
+  color: var(--color-white);
+}
+.hero-line {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  top: -10px;
+  right: 19%;
+  z-index: 1;
+}
+
+.hero-line-svg {
+  position: absolute;
+  width: 3rem;
+  height: 5rem;
+  background: #4a4a4a;
+  top: 0px;
+  left: 10px;
+  rotate: -17deg;
+}
+.hero-line-svg-second {
+  position: absolute;
+  width: 1rem;
+  height: 16%;
+  background: #4a4a4a;
+  bottom: 0px;
+  right: 4px;
+  rotate: -20deg;
+}
+.hero-line-svg-third {
+  position: absolute;
+  width: 3%;
+  height: 20%;
+  background: #4a4a4a;
+  top: 0px;
+  right: 160px;
+  rotate: -18deg;
+}
+
+.hero .hero-layer {
+  width: 100%;
+  background-color: var(--color-brand-primary);
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.hero-section .separator {
+  position: absolute;
+  width: 100%;
+  background-color: var(--color-brand-primary);
+  height: 10rem;
+  bottom: -100px;
+  z-index: 3;
+}
+
+/* About me */
+.about-text p {
+  color: var(--color-brand-text-second);
+  text-align: center;
+  font-size: var(--fs-text);
+  line-height: 2.5rem;
+  text-align: left;
+}
+.about-svg {
+  width: 42%;
+  height: 100%;
+}
+.about-svg svg {
+  width: 100% !important;
+}
+
+/* Skills */
+.skills-container h3 {
+  color: var(--color-white);
+  font-size: 1.6rem;
+  position: relative;
+  display: inline-flex;
+  padding-bottom: 7px;
+  margin-bottom: 20px;
+}
+.skills-container h3::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  background-color: var(--color-white);
+  height: 0.1rem;
+  bottom: 0px;
+  left: 0;
+}
+.lang-level {
+  background-color: var(--color-brand-secondary);
+}
+.skills-container .programming span {
+  color: var(--color-brand-text);
+}
+.skills-container .programming img {
+  background-color: #fafafa;
+}
+.skills-container .lang span {
+  color: var(--color-brand-text);
+  font-weight: 500;
+}
+.skills-container .soft span {
+  color: var(--color-brand-text);
+  font-weight: 500;
+  font-size: var(--fs-text-xl);
+}
+.lang span {
+  font-weight: 500;
+  font-size: var(--fs-text-xl);
+}
+.wrapper-experience span {
+  font-size: var(--fs-text-xl);
+}
+.experience-description li {
+  font-size: var(--fs-text-xl);
+}
+.projects-container .project-name {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+.project-features {
+  font-size: var(--fs-text-xl);
+}
+
+.tech-container span {
+  background-color: #EA9B19;
+    color: #FEFFFF;
+  padding: 10px;
+  border-radius: 100px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.visit-project-icon {
+  color: var(--color-brand-primary);
+  font-size: 2rem;
+  cursor: pointer;
+}
+.banner {
+  background-color: var(--color-brand-secondary);
+  height: 14rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.banner h3 {
+  color: var(--color-brand-primary);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.banner p {
+  color: var(--color-brand-primary);
+  font-size: 1.4rem;
+}
+
+.contact h3 > span {
+  color: var(--color-brand-secondary);
+}
+.contact .text-title {
+  font-size: 2.4rem;
+}
+.contact p {
+  font-size: var(--fs-text);
+}
+.btn {
+  background-color: var(--color-brand-secondary);
+  color: var(--color-brand-primary);
+  font-weight: 600;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 1.3rem;
+}
+.footer .footer-links a {
+  color: var(--color-brand-secondary);
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .header .navbar .list-item {
+    font-size: 0.975rem;
+    font-weight: 600;
   }
+  .section-title-container .section-title-layer,
+  .section-title-container-with-bg .section-title-layer {
+    text-shadow: 0 0 0.11rem var(--color-brand-secondary);
+    font-size: 2.6rem;
+    font-weight: 600;
+  }
+  .section-title-container-with-bg .section-title-layer {
+    text-shadow: 0 0 0.15rem var(--color-brand-primary);
+  }
+  .section-title-container .section-title-layer p,
+  .section-title-container-with-bg .section-title-layer p {
+    font-weight: 400 !important;
+    font-size: 1.17rem;
+    top: 50%;
+    right: 35%;
+    transform: translateX(40%);
+    transform: translateY(-50%);
+  }
+
+  .header .navbar .list-icon {
+    padding: 0.4rem;
+    font-size: 1.15rem;
+  }
+  .intro-image {
+    width: 100%;
+  }
+  .developer-svg {
+    width: 100%s;
+  }
+
+  .hero .intro-text .header {
+    font-size: var(--fs-lg);
+  }
+
+  .hero .intro-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero .intro-text p {
+    font-size: var(--fs-text);
+  }
+  .hero .action-buttons button {
+    padding: 0.5rem;
+    font-size: 0.88rem;
+  }
+  .about-text p {
+    text-align: center;
+    font-size: var(--fs-text);
+    line-height: 2.25rem;
+  }
+  .about-svg {
+    width: 100%;
+    height: 20rem;
+  }
+  /* Skills */
+  .skills-container h3 {
+    color: var(--color-white);
+    font-size: 1.14rem;
+    position: relative;
+    display: inline-flex;
+    padding-bottom: 7px;
+    margin-bottom: 12px;
+  }
+  .skills-container h3::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    background-color: var(--color-white);
+    height: 0.1rem;
+    bottom: 0px;
+    left: 0;
+  }
+  .lang-level {
+    background-color: var(--color-brand-secondary);
+  }
+  .hero .action-buttons button,
+  .visit-project-link,
+  .download-mycv {
+    padding: 0.6rem;
+    font-size: var(--fs-btn);
+    width: 9rem;
+  }
+  .projects-container .project-name {
+    font-size: 1.1rem;
+    margin-bottom: 7px;
+  }
+
+  .tech-container span {
+  padding: 10px;
+  font-size: 0.7rem;
+}
+  .project-action {
+    flex-direction: column;
+  }
+  .visit-project-icon {
+    font-size: 1.4rem;
+  }
+
+  .banner {
+    background-color: var(--color-brand-secondary);
+    height: 10rem;
+     margin-top: 10px;
+  margin-bottom: 10px;
+  }
+  .banner h1 {
+    color: var(--color-brand-primary);
+    font-size: 1.1rem;
+  }
+  .banner p {
+    color: var(--color-brand-primary);
+    font-size: 0.85rem;
+  }
+
+  .contact h3 > span {
+    color: var(--color-brand-secondary);
+  }
+  .footer .footer-links a {
+    color: var(--color-brand-secondary);
+    font-size: 0.9rem;
+  }
+  .contact .text-title {
+  font-size: 1.1rem;
+}
+  .btn {
+  background-color: var(--color-brand-secondary);
+  padding: 10px 10px;
+  font-size: 1rem;
+}
 }
