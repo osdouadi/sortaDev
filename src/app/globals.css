@@ -97,16 +97,14 @@ body {
 .section-title-container .section-title-layer,
 .section-title-container-with-bg .section-title-layer {
   color: var(--color-brand-orange);
-  text-shadow: 0 0 0.11rem var(--color-brand-orange);
-  font-size: 5.3rem;
-  color: var(--color-brand-primary);
+  font-size: 3rem;
+  color: var(--color-brand-orange);
   font-weight: 600;
   position: relative;
   font-family: system-ui;
 }
 .section-title-container-with-bg .section-title-layer {
-  color: var(--color-brand-orange);
-  text-shadow: 0 0 0.15rem var(--color-brand-primary);
+  color: var(--color-brand-primary);
 }
 .section-title-container .section-title-layer p,
 .section-title-container-with-bg .section-title-layer p {
@@ -424,17 +422,14 @@ body {
   }
   .section-title-container .section-title-layer,
   .section-title-container-with-bg .section-title-layer {
-    text-shadow: 0 0 0.11rem var(--color-brand-secondary);
-    font-size: 3.4rem;
+    font-size: 1.6rem;
     font-weight: 600;
   }
-  .section-title-container-with-bg .section-title-layer {
-    text-shadow: 0 0 0.15rem var(--color-brand-primary);
-  }
+
   .section-title-container .section-title-layer p,
   .section-title-container-with-bg .section-title-layer p {
     font-weight: 400 !important;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     top: 50%;
     right: 35%;
     transform: translateX(40%);

@@ -22,9 +22,8 @@ export default function Experience() {
         <div className="section-title-container-with-bg w-full overflow-hidden flex justify-center mx-auto relative  ">
           <div className="section-title-layer">
             <PlusLeft color="#263238" />
-            <span className="opacity-60 uppercase">Experience</span>
+            <span className=" uppercase">Experience</span>
             <PlusRight color="#263238" />
-            <p className="font-thin">Experience</p>
           </div>
 
           <h3 className="section-title text-center absolute"></h3>

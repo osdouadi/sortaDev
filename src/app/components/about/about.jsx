@@ -14,9 +14,8 @@ export default function About() {
       <div className="section-title-container w-full overflow-hidden flex justify-center mx-auto relative ">
         <div className="section-title-layer">
           <PlusLeft color="var(--color-brand-orange)" />
-          <span className="opacity-60 uppercase">About me</span>
+          <span className=" uppercase">About me</span>
           <PlusRight color="var(--color-brand-orange)" />
-          <p className=" font-thin">About me</p>
         </div>
 
         <h3 className="section-title text-center absolute"></h3>

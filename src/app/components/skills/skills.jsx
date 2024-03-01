@@ -30,9 +30,8 @@ export default function Skills() {
         <div className="section-title-container-with-bg w-full overflow-hidden flex justify-center mx-auto relative ">
           <div className="section-title-layer">
             <PlusLeft color="#263238" />
-            <span className="opacity-60 uppercase">Skills</span>
+            <span className="uppercase">Skills</span>
             <PlusRight color="#263238" />
-            <p className="font-thin">Skills</p>
           </div>
 
           <h3 className="section-title text-center absolute"></h3>
