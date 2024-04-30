@@ -16,7 +16,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <h3 className="header pb-2">Full Stack Developer</h3>
+            <h3 className="header pb-2">Frontend Developer</h3>
             <h2 className="font-semibold pb-1">Oussama Douadi</h2>
             <p>
               A software engineer adept in crafting high-performance systems &

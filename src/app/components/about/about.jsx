@@ -27,7 +27,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            A Full Stack Developer, proficient in crafting high-performance
+            A Frontend Developer, proficient in crafting high-performance
             applications. I am adept at creating web applications with
             intuitive, user-centric interfaces.
             <br />

@@ -17,12 +17,12 @@ export default function Experience() {
     <section>
       <div
         className="w-full h-[3rem] py-8 flex items-center lg:h-[7rem] my-5 lg:my-10"
-        style={{ background: 'var(--color-brand-orange)' }}
+        style={{ background: "var(--color-brand-orange)" }}
       >
         <div className="section-title-container-with-bg w-full overflow-hidden flex justify-center mx-auto relative  ">
           <div className="section-title-layer">
             <PlusLeft color="#263238" />
-            <span className=" uppercase">Experience</span>
+            <span className="uppercase">Experience</span>
             <PlusRight color="#263238" />
           </div>
 
@@ -44,7 +44,7 @@ export default function Experience() {
             <div className="flex flex-col items-start text-gray-300">
               <span className="text-[#5fa8a0] flex items-center gap-2 experience-title">
                 <LuGraduationCap />
-                Master's Degree{' '}
+                Master's Degree{" "}
               </span>
               <div className="flex flex-row items-center">
                 <span className="text-gray-400">Djelfa University</span>
@@ -57,7 +57,7 @@ export default function Experience() {
             <div className="flex flex-col items-start text-gray-300">
               <span className="text-[#5fa8a0] flex items-center gap-2 experience-title">
                 <LuGraduationCap />
-                Bachelor's Degree{' '}
+                Bachelor's Degree{" "}
               </span>
               <div className="flex flex-row items-center">
                 <span className="text-gray-400">Djelfa University</span>
@@ -81,7 +81,7 @@ export default function Experience() {
             <div className="flex flex-col items-start text-gray-300 experience-title mb-3">
               <span className="text-[#5fa8a0] flex items-center gap-2 experience-title pb-1">
                 <MdOutlineWorkOutline />
-                Djelfa Developers Club{' '}
+                Djelfa Developers Club{" "}
               </span>
               <div className="flex flex-row items-center">
                 <span className="text-gray-400">Active Member since</span>
@@ -90,9 +90,9 @@ export default function Experience() {
             </div>
             <ul className="text-gray-200 experience-description">
               <li>
-                {' '}
+                {" "}
                 - Since joining the club, I have contributed to many activities
-                organized by the club.{' '}
+                organized by the club.{" "}
               </li>
               <li>
                 - We have organized numerous programming competitions as well as
@@ -109,7 +109,7 @@ export default function Experience() {
             <div className="flex flex-col items-start text-gray-300 mb-3">
               <span className="text-[#5fa8a0] flex items-center gap-2 experience-title pb-1">
                 <MdOutlineWorkOutline />
-                Alshamel | Kwait{' '}
+                Alshamel | Kwait{" "}
               </span>
               <div>
                 <span className="text-gray-400">Frontend Developer,</span>
@@ -132,7 +132,26 @@ export default function Experience() {
               <li>
                 - The company rents these programs to the client during a
                 specific period, and that period is determined by the
-                administration.{' '}
+                administration.{" "}
+              </li>
+            </ul>
+          </div>
+          <div className="wrapper-experience  flex flex-col gap-2 mb-4 px-5 lg:px-0">
+            <div className="flex flex-col items-start text-gray-300 mb-3">
+              <span className="text-[#5fa8a0] flex items-center gap-2 experience-title pb-1">
+                <MdOutlineWorkOutline />
+                Marvya | Germany{" "}
+              </span>
+              <div>
+                <span className="text-gray-400">Frontend Developer</span>
+                <span className="ml-2 text-gray-400">Remote | 1 month</span>
+              </div>
+            </div>
+            <ul className="text-gray-200 experience-description ">
+              <li>- I remotely worked with Marvya as a frontend developer.</li>
+              <li>
+                - I was hired to fix some bugs in affiliate marketing web
+                application developed on Shopify with Next js.
               </li>
             </ul>
           </div>
@@ -224,7 +243,7 @@ export default function Experience() {
               transition={{ duration: 0.6 }}
             >
               <div className=" pb-3 text-gray-300 ">
-                <h1 className="project-name">Online Store | Full-stack</h1>
+                <h1 className="project-name">Online Store | Full stack</h1>
               </div>
               <div className="project-image max-h-[55vw]  lg:max-h-[23vw] overflow-hidden w-full">
                 <img
